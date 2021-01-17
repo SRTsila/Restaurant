@@ -48,7 +48,6 @@ async def do_reservation(request: Request) -> Any:
     name = data_from_form.get('name')
     date = data_from_form.get('date')
     if not database.tableReserved(date, table_number):
-        print('here2')
         telephone = data_from_form.get('phone')
         comments = data_from_form.get('message')
         email = data_from_form.get('email')
