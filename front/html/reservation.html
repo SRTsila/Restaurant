@@ -40,8 +40,8 @@
                 <span class="form_hint"></span>
             </li>
             <li>
-                <label class="text-in-label" for="date">Дата и время<span class="red">*</span>:</label>
-                <input type="datetime-local" name="datetime" required/>
+                <label class="text-in-label" for="date">Дата<span class="red">*</span>:</label>
+                <input type="date" name="date" required/>
             </li>
             <li>
                 <label class="text-in-label" for="table">Стол №<span class="red">*</span>:</label>
@@ -52,7 +52,8 @@
                 <textarea name="message" cols="40" rows="4" maxlength="30"></textarea>
             </li>
             <li>
-                <button class="submit" type="submit">Отправить</button>
+                <div><input class="button-res" name="skip_Submit" value="Зарезервировать" type="submit"></div>
+                <span class="text"> {{result}}</span>
             </li>
 
         </ul>

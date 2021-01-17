@@ -1,2 +1,4 @@
 venv/**
 .idea/**
+reserves.db
+back/_pycache_
